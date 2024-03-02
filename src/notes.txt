@@ -1,0 +1,211 @@
+ // const getInfo = async () => {
+  //   console.log(user.uid)
+  //   // const querySnapshot = await getDocs(collection(db, "userInformation"));
+  //   // const info = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
+  //   // querySnapshot.forEach((doc) => {
+  //     // // doc.data() is never undefined for query doc snapshots
+  //     // console.log(doc.id, " => ", doc.data());
+  //     // });
+  //     // setInfo(info)
+
+  //     // const querySnapshot = await getDocs(collection(db, "userInformation"));
+  //     // const info = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
+  //     // setInfo(info)
+  //     // console.log(info)
+
+
+  //     const docRef = doc(db, "userInformation", user.uid);
+  //     const docSnap = await getDoc(docRef);
+  //     const data = docSnap.data()
+  //       setUserParam(data)
+
+  //     // if (docSnap.exists()) {
+  //     //   // const querySnapshot = await getDoc(doc(db, docSnap.data()))
+  //     //   const data = docSnap.data()
+  //     //   console.log("Document data:", docSnap.data());
+  //     //   // console.log(data.firstName);
+  //     //   setUserParam(data)
+  //     // } else {
+  //     //   // docSnap.data() will be undefined in this case
+  //     //   console.log("No such document!");
+  //     // }
+
+  //     // setUserParam(userParam)
+
+  // }
+
+  // const newData = {
+  //   firstName: "Tobi",
+  //   lastName: "Tosin"
+  
+  // }
+
+  // const dat = {
+  //   firstName: "Falode",
+  //   lastName: "Gabriel"
+  
+  // }
+
+  // const dataa = {
+  //   firstName: "Hassan",
+  //   lastName: "Eunice"
+  
+  // }
+  
+  // const addInfo = async () => {
+  //    // Add a new document with a generated id.
+  //   //  try {
+  //   //   await addDoc(collection(db, "userInformation"), {
+  //   //     ...newData
+
+  //   //   })
+  //   //  } catch (error) {
+  //   //   console.log(error.message)
+
+  //   //  }
+  //   // const querySnapshot = await getDocs(collection(db, "userInformation"));
+  //   // const info = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}))
+  //   // // const check = info.filterIndex((item) => item. )
+  //   // console.log(info)
+
+  //   try {
+  //     await setDoc(doc(db, "userInformation", user.uid), {...dataa});
+  //   } catch (error) {
+  //     console.log(error.message)
+  //   }
+
+
+
+  //    getInfo()
+    
+     
+  // }
+
+  // useEffect(() => {
+  //   getInfo()
+  // }, [user])
+
+  // console.log(...allProducts)
+
+  // const data = {...allProducts}
+  // // Object.entries(data).map(entry => {
+  // //   console.log(entry[1])
+  // // })
+
+  // const updateProductDataBase = doc(db, "products", "all");
+  // const productsData = {...allProducts}
+
+  // console.log(gamePadConsole.discount)
+  // console.log(keyboardItem.name)
+
+
+  
+  // const productsDatabase = collection(db, "Products")
+  // const currentProductArray = useSelector((state) => state?.cart?.currentProduct)
+  // const product = currentProductArray[0]?.map((item)=> {
+  //   return item?.id
+  // })
+
+  // const curProduct = currentProductArray[0]
+  // const {...curProductReviews} = curProduct[0].reviews
+  // // console.log(curProductReviews)
+
+  // const productId = product[0]
+  // // console.log(productId)
+
+  // const updateProductsArray = doc(db, "Products", "all");
+
+  // const updateAllProductsDatabase = doc(db, "allProducts", productId)
+
+
+  // const data = {
+  //   products: []
+  // }
+
+
+  // const setDatabse = async () => {
+
+  //   if(currentProductArray?.length >= 1) {
+  //     await updateDoc(updateAllProductsDatabase, {
+  //       "reviews": curProductReviews
+  //     })
+
+  //     user.productArray = curProduct
+
+  //     await updateProfile(user, {productArray: data}).then(() => {
+
+  //       console.log('Product Array updated')
+  //       console.log(user)
+  //     }).catch((error) => {
+  //       console.log('An error occurred')
+  //     })
+      
+
+  //   } else {
+
+  //       try {
+  //         // first
+  //         await setDoc(doc(db, "allProducts", gamePadConsole.id), {
+  //           ...gamePadConsole
+  //         })
+  //         const docRef = doc(db, "allProducts", gamePadConsole.id);
+  //         const docSnap = await getDoc(docRef);
+  //         const data2 = docSnap?.data()
+    
+  //         user.productArray = [data2]
+    
+  //         await updateProfile(user, {productArray: user.productArray}).then(() => {
+    
+  //           console.log('Profile updated')
+  //           console.log(user)
+  //         }).catch((error) => {
+  //           console.log('An error occurred')
+  //         })
+    
+  //         // second
+    
+  //         await setDoc(doc(db, "allProducts", keyboardItem.id), {
+  //           ...keyboardItem
+  //         })
+  //         const docRef2 = doc(db, "allProducts", keyboardItem.id);
+  //         const docSnap2 = await getDoc(docRef2);
+  //         const data3 = docSnap2?.data()
+    
+  //         user.productArray = [data3]
+    
+  //         await updateProfile(user, {productArray: user.productArray}).then(() => {
+    
+  //           console.log('Profile updated')
+  //           console.log(user)
+  //         }).catch((error) => {
+  //           console.log('An error occurred')
+  //         })
+          
+
+  //         await setDoc(doc(db, "allProducts", monitorItem.id), {
+  //           ...monitorItem
+  //         })
+  //         dispatch(updateProduct(monitorItem))
+    
+  //         // set array
+  //         await setDoc(doc(db, "Products", "all"), {...data});
+    
+  //         //update array
+  //         await updateDoc(updateProductsArray, {
+  //           products: arrayUnion(...allProducts)
+  //         })
+    
+    
+  //         console.log('Working')
+          
+  //       } catch (error) {
+  //         console.log(error.message)
+  //       }
+  //   }
+
+
+  // }
+
+  // useEffect(() => {
+  //   setDatabse()
+  // }, [])
